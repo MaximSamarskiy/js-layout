@@ -9,24 +9,37 @@ const header = createHeader()
 
 page.append(header)
 
-const title = createElement('h1', 'title', 'Мій Блог')
+const title = createElement('h1', 'title', 'Коммьюніті')
 
 page.append(title)
 
+//=========
+
+//======
+
+let IMG = document.createElement('img')
+IMG.src = '/img/image_layout.png'
+IMG.width = 343
+IMG.height = 160
+
+let div1 = document.createElement('div')
+div1.append(IMG)
+page.append(div1)
+
+//===========
+
 const POST_LIST = [
   {
-    category: [
-      { text: 'Важливо', id: 1 },
-      { text: 'Нове', id: 2 },
-    ],
-    info: 'До біса планувальник,наймаємо дизайнера і готуємося до презентації,як Джобс',
-    date: '25.01',
+    category: [{ text: 'Що таке база знань?', id: 1 }],
+    info: 'База знаний — база данных, содержащая правила вывода и информацию о человеческом опыте и знаниях в некоторой предметной области. В самообучающихся системах база знаний также содержит информацию, являющуюся результатом решения предыдущих задач. ',
     viewed: false,
   },
   {
-    category: [{ text: 'Нове', id: 2 }],
-    info: 'Ми хотіли щоб у цьому чаті було близько 150 людей щоб зробити якісний пак самопрезентацій',
-    date: '24.01',
+    category: [
+      { text: 'Перейти до комьюніті в Telegram', id: 2 },
+    ],
+    info: '',
+    date: '',
     viewed: true,
   },
 ]

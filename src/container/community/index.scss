@@ -42,8 +42,9 @@
 	gap: 12px;
 
 	&--viewed{
-		background-color: transparent;
+		background-color: #F46F17;
 		border-color: #e6e6e6;
+		
 
 		.post__info{
 			color: #888888;
@@ -57,6 +58,7 @@
 .post__category-list{
 	display: flex;
 	gap: 8px;
+
 }
 .post__data{
 	color: #888888;
@@ -65,19 +67,42 @@
 .post__info{
 	font-size: 16px;
 	line-height: 1.4em;
-	color: #121212;
+	color: #888888;
 }
 .post__category{
-	padding: 8px 12px;
+	
 	font-size: 12px;
 	border-radius: 50px;
 
 	&--1{
-		color: #f46f17;
-		background-color: #f7e9e1;
+		font-size: 24px;
+		
 	}
 	&--2{
-		color: #ef5da8;
-		background-color: #f6e8ef;
+		margin-left: 40px;
+		margin-top: 15px;
+		color: black;
+		font-size: 16px;
+		
+		
 	}
+}
+.wrapper{
+	margin: 0 auto;
+	width: 350px;
+}
+.tabs{
+	display: flex;
+	justify-content:space-evenly;
+	font-size: 18px;
+}
+.tabs-nav__item{
+	border-bottom:1px solid transparent;
+	padding: 10px;
+	color: grey;
+	cursor: pointer;
+}
+.tabs-nav__item.is-active{
+	border-color: black;
+	color: #000000;
 }
